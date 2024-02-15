@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bodywork Therapy</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div id="main-header" class="main-header">
+            <h1 id="title">Bodywork Therapy</h1>
+            <div>
+                <div id="nav-icon">
+                    <button id="nav-toggle" aria-label="Open navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#welcome">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#conditions">Conditions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="welcome">
+        <h2>Welcome to<br>Bodywork Therapy</h2>
+        <p>Regain mobility, overcome pain, and thrive<br>with personalized care and advanced rehabilitation.</p>
+        <button>Book Now</button>
+    </section>
+</header>
+
+<section id="about">
+    <div id="content">
+        <h2>Meet Stephen Hunter:<br>Your Expert Physiotherapist</h2>
+        <p>
+            Discover the difference a decade of experience makes with Stephen Hunter, our lead physiotherapist. Specializing in both traditional physiotherapy and acupuncture, Stephen offers a comprehensive approach to physical health and wellness.<br><br>
+            
+            His personalized treatment plans are tailored to meet each client's unique needs, ensuring a holistic path to recovery. Whether it's managing pain through acupuncture, rehabilitating an injury, or engaging in preventative care, Stephen's expertise and commitment to continuous learning make him the ideal partner in your health journey. Experience the blend of care, expertise, and innovative treatment with Stephen, and take your first step towards a more active and pain-free life.
+        </p>
+    </div>
+    <div id="about-image">
+        <img src="images/stephen-hunter-1.jpg" alt="Stephen Hunter Photo">
+    </div>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <div id="services-items">
+        <div class="service">
+            <img src="/images/Physiotherapy.jpg" alt="Physiotherapy">
+            <div class="service-info">
+                <h3>Physiotherapy</h3>
+                <p>Tailored physiotherapy exercises and treatments designed to enhance mobility, relieve pain, and accelerate recovery from injuries.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="/images/Acupuncture.jpg" alt="Acupuncture">
+            <div class="service-info">
+                <h3>Acupuncture</h3>
+                <p>Ancient and effective, acupuncture offers relief from chronic pain, stress, and various health conditions through targeted needle therapy.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="/images/Chiropractic.jpg" alt="Chiropractic">
+            <div class="service-info">
+                <h3>Chiropractic</h3>
+                <p>Focused on spinal health, chiropractic care provides precise adjustments to improve posture, alleviate pain, and enhance overall physical wellness.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonial</h2>
+    <div id="tesimonial">
+        <p>"Exceptional 10/10 service! Stephen's skilled hands and expertise brought my aching joints back to life in just three sessions. I was struggling with a persistent neck strain that radiated pain down my back, but his professional approach and targeted physiotherapy have allowed me to return to my daily routines, free from the intense discomfort that had plagued me for weeks. Immense gratitude for the relief provided, and I wholeheartedly recommend his services!"</p>
+        <p>James Smith</p>
+    </div>
+</section>
+
+<section id="conditions">
+    <h2>Common Conditions</h2>
+    <div class="conditions-grid">
+        <div class="condition">
+            <img src="/images/neck-pain.jpg" alt="Neck Pain">
+            <p>Neck Pain</p>
+            <hr>
+        </div>
+        <div class="condition">
+            <img src="/images/back-pain.jpg" alt="Back Pain">
+            <p>Back Pain</p>
+            <hr>
+        </div>
+        <div class="condition">
+            <img src="/images/migraine.jpg" alt="Migraine">
+            <p>Migraine</p>
+            <hr>
+        </div>
+        <div class="condition">
+            <img src="/images/joint-pain.jpg" alt="Joint Pain">
+            <p>Joint Pain</p>
+            <hr>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p><strong>Address</strong><br>
+        Carnarvon Grove,<br>
+        Carlton,<br>
+        Nottingham,<br>
+        NG4 1RP</p>
+
+        <p><strong>Telephone</strong><br>
+        +44 (0) 7506 691008</p>
+
+        <p><strong>Email</strong><br>
+        stephenhunteruk@gmail.com</p>
+    </div>
+    
+    <form id="contact-form" action="https://formspree.io/f/mdorrbpo" method="POST">
+        <div class="input-group">
+            <input type="text" id="first-name" name="first_name" placeholder="First Name">
+            <input type="text" id="last-name" name="last_name" placeholder="Last Name">
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+        </div>
+        <textarea id="message" rows="5" name="message" placeholder="Message"></textarea>
+        <button type="submit">Send Now</button>
+    </form>
+
+    <div class="footer-bottom">
+        <hr>
+        <p>Copyright © Bodywork Therapy 2023. All rights reserved</p>
+        <p>Designed & Built Luke Hunter-Salmons</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

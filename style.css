@@ -1,0 +1,841 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    /* box-sizing: border-box; */
+    color: #EFEFEF;
+}
+
+header {
+    background: url('images/Acupuncture\ 1.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header #main-header {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(56, 56, 56, 0.5);
+}
+
+#title {
+    color: #fff;
+    padding: 10px;
+    margin: 10px 5px 10px 20px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 1em 0;
+    margin: 10px;
+}
+
+nav ul li {
+    padding: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 18px;
+    transition: .2s color;
+}
+
+nav ul li a:hover {
+    color: #718282;
+}
+
+#welcome,
+#services,
+#testimonials {
+    text-align: center;
+}
+
+
+/* Hero Section */
+#welcome {
+    position: relative;
+    background-size: cover;
+    /* padding-top: 100px; */
+    padding-top: 30vh;
+    margin-left: 50px;
+    text-align: left;
+    margin-bottom: 0;
+    
+}
+
+#welcome h2 {
+    font-size: 52px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+#welcome p {
+    margin: 25px 0;
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+button {
+    background: #546464;
+    color: #FFFFFF;
+    font-size: 19px;
+    border: none;
+    padding: 13px 25px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 25px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(105%);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+
+/* About Section */
+#about {
+    display: flex;
+}
+
+#content {
+    background-color: #546464;
+    padding: 30px;
+    min-height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+#content h2 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    max-width: 80%;
+    margin-top: 80px;
+    margin-left: 10%;
+}
+
+#content p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    max-width: 80%;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 25%;
+}
+
+#about-image {
+    background-color: #fff;
+    padding: 20px; 
+    align-items: center;
+    margin-right: -100px;
+}
+
+#about-image img {
+    max-width: 55vh; 
+    height: auto;
+    border-radius: 50%;
+    margin-top: 75px;
+    transform: translateX(-50%);
+}
+
+/* Services Section */
+
+#services h2{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #546464;
+    padding: 25px 0;
+}
+
+#services-items {
+    display: flex;
+    margin: 90px;
+    margin-top: 0;
+}
+
+.service {
+    margin: 20px;
+    flex-direction: column;
+    width: 35%;
+}
+
+.service img {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+
+.service-info {
+    background-color: #546464;
+    padding: 15px 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-direction: column;
+    height: 180px;
+}
+
+.service-info h3 {
+    color: #EFEFEF;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    margin-top: 10px;
+}
+
+.service-info p {
+    color: #EFEFEF; 
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+/* Testimonials */
+#testimonials {
+    background-image: linear-gradient(rgba(52, 52, 54, .68), rgba(52, 52, 54, .68)), url('images/Testimonials-Banner.jpg');
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#testimonials h2{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #EFEFEF;
+    padding: 25px 0;
+    padding-top: 50px;
+}
+
+#tesimonial{
+    margin: 5px 20%;
+}
+
+#tesimonial p{
+    color: #EFEFEF; 
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+
+/* Conditions Section */
+#conditions {
+    text-align: center;
+}
+
+#conditions h2 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #546464;
+    margin-bottom: 50px;
+}
+
+.conditions-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.condition {
+    /* flex: 1; */
+    min-width: 220px;
+    max-width: 300px;
+    position: relative;
+}
+
+.condition img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.condition::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, .35);
+    margin-bottom: 4px;
+    border-radius: 10px;
+}
+
+.condition p {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #EFEFEF;
+    padding: 5px 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.condition hr{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 1px solid #909090;
+    width: 75%;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #546464;
+    color: #efefef;
+    padding: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 40%;
+    margin-left: 40px;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.6px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 80px 60px 0 0;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.input-group input {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #b4b4b4;
+    background-color: transparent;
+    color: #efefef;
+}
+
+#contact-form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #b4b4b4;
+    background-color: transparent;
+    color: #efefef;
+}
+
+::placeholder {
+    color: #BBC1C1;
+    opacity: 1; /* Firefox */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#contact-form button {
+    background: #FFFFFF;
+    color: #546464;
+    font-size: 17px;
+    border: none;
+    padding: 11px 21px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 25px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    transition: .2s ease;
+    width: 135px
+}
+
+#contact-form button:hover {
+    transform: scale(105%);
+}
+
+.footer-bottom {
+    width: 100%;
+    margin-top: 50px; /* Add space above the bottom footer */
+    text-align: center;
+}
+
+.footer-bottom hr {
+    margin-bottom: 30px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    line-height: 2;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+
+#nav-icon button {
+    width: 80px;
+    background-color: transparent;
+}
+
+#nav-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 35px;
+    padding: 0;
+    text-align: center;
+}
+
+#nav-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #efefef;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+#nav-toggle.toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#nav-toggle.toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+#nav-toggle.toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+
+/* Devices Under 1280px */
+@media (max-width: 1280px) {
+    #title {
+        font-size: 28px;
+    }
+
+    #content {
+        background-color: #546464;
+        padding: 20px;
+        min-height: 50vh;
+    }
+    
+    #content h2 {
+        font-size: 34px;
+        letter-spacing: 0.6px;
+        max-width: 75%;
+        margin-top: 40px;
+    }
+    
+    #content p {
+        font-size: 17px;
+        letter-spacing: 0.1px;
+        max-width: 80%;
+        margin-right: 25%;
+    }
+    
+    #about-image {
+        background-color: #fff;
+        padding: 30px; 
+        align-items: center;
+        margin-right: -100px;
+    }
+    #about-image img {
+        margin-top: 40px;
+        max-width: 45vh; 
+        height: auto;
+        transform: translateX(-50%);
+    }
+
+    #services h2{
+        font-size: 42px;
+        letter-spacing: 0.7px;
+        padding: 10px 0;
+        margin-bottom: 5px;
+    }
+    
+    #services-items {
+        margin: 50px;
+        margin-top: 5px;
+    }
+    
+    .service img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .service-info {
+        padding: 15px 20px;
+        height: 180px;
+    }
+    
+    .service-info h3 {
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        margin-top: 10px;
+    }
+    
+    .service-info p {
+        color: #EFEFEF; 
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+    }
+
+    #testimonials h2{
+        font-size: 42px;
+        letter-spacing: 0.7px;
+        padding: 15px 0;
+        padding-top: 50px;
+    }
+
+    /* Conditions */
+    #conditions h2 {
+        font-size: 42px;
+        letter-spacing: 0.7px;
+        margin-bottom: 45px;
+    }
+
+    .condition {
+        min-width: 180px;
+        max-width: 230px;
+        position: relative;
+    }
+
+    .condition p {
+        padding: 5px 5px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 8%;
+    }
+    
+    .contact-info {
+        margin-left: 30px;
+    }
+    
+    .contact-info h2 {
+        font-size: 32px;
+        letter-spacing: 0.8px;
+    }
+    
+    .contact-info p {
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+    }
+    
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 80px 30px 0 0;
+    }
+    
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    
+    .input-group input {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+/* Devices Under 1020px */
+@media (max-width: 1024px) {
+    #nav-icon {
+        display: flex;
+        align-items: end;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: right;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 10px;
+        text-align: right;
+    }
+
+    #welcome {
+        text-align: center;
+        margin-left: 0;
+        padding: 200px 10px;
+    }
+
+    /* About */
+    #about {
+        flex-direction: column;
+        align-items: center;
+        background-color: #546464;
+    }
+
+    #content, #about-image {
+        /* width: 100%; */
+        order: 2; /* Ensures content is after the image */
+        text-align: center;
+    }
+
+    #content {
+        padding-left: 10%;
+        margin-top: -15px;
+        padding-top: 0;
+    }
+
+
+    #about-image {
+        order: 1;
+        margin-right: 0;
+        background-color: #546464;
+        margin-bottom: 0;
+    }
+
+    #content h2 {
+        order: -1;
+        margin-left: 0;
+        max-width: 90%;
+    }
+
+    #content p {
+        order: 3;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 90%;
+    }
+    
+    #about-image img {
+        margin-top: 25px;
+        transform: translateX(0);
+        background-color: #546464;
+    }
+
+    /* Services */
+    .service {
+        width: 350px;
+    }
+
+    #services-items {
+        justify-content: center;
+        margin: 40px 15px;
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+
+    /* Testimonials */
+    #testimonials {
+        min-height: 55vh;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .contact-info,
+    #contact-form,
+    .footer-bottom {
+        width: 80%;
+        margin: 20px 0; /* Add some margin for spacing */
+    }
+
+    .contact-info h2 {
+        font-size: 42px;
+        margin-top: 10px;
+    }
+}
+
+/* Devices Under 810px */
+@media (max-width: 810px) {
+    .service {
+        width: 65%;
+    }
+
+    #services-items {
+        margin: 50px;
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+
+    .service-info h3 {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        margin-top: 10px;
+    }
+    
+    .service-info p {
+        color: #EFEFEF; 
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+    }
+
+}
+
+/* Devices Under 700px */
+@media (max-width: 700px) {
+    #title {
+        color: #fff;
+        padding: 5px;
+        margin: 10px 5px 10px 10px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        font-size: 26px;
+    }
+
+    .service-info h3 {
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        margin-top: 10px;
+    }
+    
+    .service-info p {
+        color: #EFEFEF; 
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+    }
+
+    #services-items {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* Testimonial */
+    #testimonials {
+        min-height: 60vh;
+        padding-bottom: 10px;
+    }
+
+    /* Footer */
+    .input-group {
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    footer {
+        padding: 40px 2%;
+    }
+}
+
+/* Devices Under 440px */
+@media (max-width: 440px) {
+    #nav-icon {
+        margin-right: 0;
+    }
+
+    #title {
+        padding: 5px 5px;
+        margin-right: -70px;
+        margin-left: 10px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        font-size: 26px;
+    }
+
+    #nav-icon {
+        margin-right: 2px;
+    }
+}
+
+/* Devices under height 680px */
+@media (max-height: 680px) {
+    .service-info {
+        padding-bottom: 25px;
+    }
+}
+
+/* Devices under height 420px */
+@media (max-height: 420px) {
+    #about-image {
+        padding: 15px;
+    }
+    #about-image img {
+        max-width: 65vh; 
+    }
+
+    #testimonials {
+        min-height: 60vh;
+        padding-bottom: 10px;
+    }
+}
